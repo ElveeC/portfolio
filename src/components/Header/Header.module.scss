@@ -1,0 +1,19 @@
+.header__wrapper {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.header__nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.header__nav-link {
+    color: inherit;
+    text-decoration: none;
+}
