@@ -34,7 +34,7 @@
 
     &--ts.icons__item--animated {
         animation-name: appearing-ts;
-        animation-delay: 0.3s;
+        animation-delay: 0.2s;
     }
 
     &--vite {
@@ -45,7 +45,7 @@
     
     &--vite.icons__item--animated {
         animation-name: appearing-vite;
-        animation-delay: 0.6s;
+        animation-delay: 0.4s;
     }
 
     &--gulp {
@@ -54,7 +54,7 @@
 
     &--gulp.icons__item--animated {
         animation-name: appearing-gulp;
-        animation-delay: 0.9s;
+        animation-delay: 0.6s;
     }
 
     &--webpack {
@@ -64,7 +64,7 @@
 
     &--webpack.icons__item--animated {
         animation-name: appearing-webpack;
-        animation-delay: 1.2s;
+        animation-delay: 0.8s;
     }
 
     &--sass {
@@ -73,7 +73,7 @@
 
     &--sass.icons__item--animated {
         animation-name: appearing-sass;
-        animation-delay: 1.6s;
+        animation-delay: 1s;
     }
 
     &--css {
@@ -83,7 +83,7 @@
 
     &--css.icons__item--animated{
         animation-name: appearing-css;
-        animation-delay: 1.9s;
+        animation-delay: 1.2s;
     }
 
     &--html {
@@ -92,7 +92,7 @@
 
     &--html.icons__item--animated{
         animation-name: appearing-html;
-        animation-delay: 2.2s;
+        animation-delay: 1.4s;
     }
 }
 

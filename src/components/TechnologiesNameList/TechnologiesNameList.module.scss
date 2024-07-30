@@ -1,11 +1,45 @@
 .tech-in-use {
+    
     &__title {
+        position: relative;
+        margin: 0;
+        margin-bottom: 30px;
         font-size: 28px;
         font-weight: 500;
     }
 
     &__list {
+        margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         list-style-type: none;
+    }
+}
+
+.tech-in-use__title--animated {
+ 
+    &::after {
+        position: absolute;
+        content: '';
+        background: -webkit-linear-gradient(45deg, #9f007f, #01cb7a 90%);;
+        left: 0;
+        bottom: -15px;
+        width: 0;
+        height: 3px;
+        animation-name: line-appearing;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes line-appearing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }

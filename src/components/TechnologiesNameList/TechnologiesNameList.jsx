@@ -1,15 +1,22 @@
+import { useInView } from "react-intersection-observer";
 import styles from "./TechnologiesNameList.module.scss";
+import cn from "classnames";
 
 const TechnologiesNameList = () => {
+  
+  const { ref, inView } = useInView({
+    threshold: 1,
+    triggerOnce: true,
+  });
 
-    const Title = {
-        EN: "Magic potion ingredients",
-        RU: "Ингредиенты для зелья",
-      };
+  const Title = {
+    EN: "Magic potion ingredients",
+    RU: "Ингредиенты для зелья",
+  };
 
   return (
     <div className={styles["tech-in-use"]}>
-      <h3 className={styles["tech-in-use__title"]}>{Title.EN}</h3>
+      <h3 ref={ref} className={cn(styles["tech-in-use__title"], {[styles["tech-in-use__title--animated"]]: inView})}>{Title.EN}</h3>
       <ul className={styles["tech-in-use__list"]}>
         <li className={styles["tech-in-use__item"]}>JavaScript</li>
         <li className={styles["tech-in-use__item"]}>TypeScript</li>

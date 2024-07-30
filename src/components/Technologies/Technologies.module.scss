@@ -8,13 +8,13 @@
     max-width: 1280px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
 .technologies__title {
     display: inline-block;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     font-size: 90px;	
     color: #fff;
     background: -webkit-linear-gradient(45deg, #9f007f, #01cb7a 90%);
@@ -27,5 +27,5 @@
 .technologies__list-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
 }
