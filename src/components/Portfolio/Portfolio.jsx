@@ -3,7 +3,6 @@ import styles from "./Portfolio.module.scss";
 import PortfolioItem from "../PortfolioItem/PortfolioItem";
 
 const Portfolio = () => {
-
   const portfolioItems = [
     {
       title: "Acrylica",
@@ -29,12 +28,14 @@ const Portfolio = () => {
 
   return (
     <section className={styles.portfolio} id="portfolio">
-      <h2 className={styles['portfolio__title']}>Portfolio</h2>
-      <ul className={styles["porfolio__list"]}>
-        {portfolioItems.map((item) => (
-          <PortfolioItem item={item} key={item.title}/>
-        ))}
-      </ul>
+      <div className={styles.portfolio__inner}>
+        <h2 className={styles["portfolio__title"]}>Portfolio</h2>
+        <ul className={styles["porfolio__list"]}>
+          {portfolioItems.map((item) => (
+            <PortfolioItem item={item} key={item.title} />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

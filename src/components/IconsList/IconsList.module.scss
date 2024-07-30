@@ -1,0 +1,169 @@
+.icons {
+    padding-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons__list {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.icons__item {
+    position: absolute;
+    top: -1000px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    &--js {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &--js.icons__item--animated {
+        animation-name: appearing-js;
+    }
+
+    &--ts {
+        right: 10%;
+    }
+
+    &--ts.icons__item--animated {
+        animation-name: appearing-ts;
+        animation-delay: 0.3s;
+    }
+
+    &--vite {
+        right: 0;
+        transform: translate(0, -50%);
+    }
+
+    
+    &--vite.icons__item--animated {
+        animation-name: appearing-vite;
+        animation-delay: 0.6s;
+    }
+
+    &--gulp {
+        right: 10%;
+    }
+
+    &--gulp.icons__item--animated {
+        animation-name: appearing-gulp;
+        animation-delay: 0.9s;
+    }
+
+    &--webpack {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &--webpack.icons__item--animated {
+        animation-name: appearing-webpack;
+        animation-delay: 1.2s;
+    }
+
+    &--sass {
+        left: 10%;
+    }
+
+    &--sass.icons__item--animated {
+        animation-name: appearing-sass;
+        animation-delay: 1.6s;
+    }
+
+    &--css {
+        left: 0;
+        transform: translate(0, -50%);
+    }
+
+    &--css.icons__item--animated{
+        animation-name: appearing-css;
+        animation-delay: 1.9s;
+    }
+
+    &--html {
+        left: 10%;
+    }
+
+    &--html.icons__item--animated{
+        animation-name: appearing-html;
+        animation-delay: 2.2s;
+    }
+}
+
+@keyframes appearing-js {
+    0% {
+        top: -1000px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes appearing-ts {
+    0% {
+        top: -1000px;
+    } 
+    100% {
+        top: 10%;
+    }
+}
+
+@keyframes appearing-vite {
+    0% {
+        top: -1000px;
+    }  
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes appearing-gulp {
+    0% {
+        top: -1000px;
+    }  
+    100% {
+        top: 70%;
+    }
+}
+
+@keyframes appearing-webpack {
+    0% {
+        top: -1000px;
+    }  
+    100% {
+        top: 80%;
+    }
+}
+
+@keyframes appearing-sass {
+    0% {
+        top: -1000px;
+    }  
+    100% {
+        top: 70%;
+    }
+}
+
+@keyframes appearing-css {
+    0% {
+        top: -1000px;
+    }  
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes appearing-html {
+    0% {
+        top: -1000px;
+    }  
+    100% {
+        top: 10%;
+    }
+}

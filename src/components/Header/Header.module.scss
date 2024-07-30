@@ -1,7 +1,10 @@
-.header__wrapper {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
+.header {
+    padding: 50px 30px;
+}
+
+.header__inner {
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 .header__nav-list {

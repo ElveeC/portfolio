@@ -1,7 +1,20 @@
+.technologies {
+    margin-bottom: 50px;
+    padding: 0 30px;
+}
+
+.technologies__inner {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
 .technologies__title {
     display: inline-block;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     font-size: 90px;	
     color: #fff;
     background: -webkit-linear-gradient(45deg, #9f007f, #01cb7a 90%);
@@ -13,170 +26,6 @@
 
 .technologies__list-wrapper {
     display: flex;
-    justify-content: center;
-    //align-items: center;
-    //margin: 0 auto;
-    padding-left: 50%;
-}
-
-.technologies__list {
-    position: relative;
-    //padding: 20px;
-    //width: 100%;
-    height: 300px;
-    width: 300px;
-    //aspect-ratio: 3/2;
-    //aspect-ratio: 1/1;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.technologies__item {
-    position: absolute;
-    top: -1000px;
-    //top: 0;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-
-    &--js {
-        //top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        animation-name: appearing-js;
-    }
-
-    &--ts {
-        //top: 10%;
-        right: 10%;
-        animation-name: appearing-ts;
-        animation-delay: 0.3s;
-    }
-
-    &--vite {
-        //top: 50%;
-        right: 0;
-        transform: translate(0, -50%);
-        animation-name: appearing-vite;
-        animation-delay: 0.6s;
-    }
-
-    &--gulp {
-        //bottom: 10%;
-        right: 10%;
-        animation-name: appearing-gulp;
-        animation-delay: 0.9s;
-    }
-
-    &--webpack {
-        //bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        animation-name: appearing-webpack;
-        animation-delay: 1.2s;
-    }
-
-    &--sass {
-        //bottom: 10%;
-        left: 10%;
-        animation-name: appearing-sass;
-        animation-delay: 1.6s;
-    }
-
-    &--css {
-        //top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-        //animation-name: appearing-css;
-        //animation-delay: 1.9s;
-    }
-
-    &--css.technologies__item--animated{
-        animation-name: appearing-css;
-        animation-delay: 1.9s;
-    }
-
-    &--html {
-        //top: 10%;
-        left: 10%;
-        //animation-name: appearing-html;
-        //animation-delay: 2.2s;
-    }
-
-    &--html.technologies__item--animated{
-        animation-name: appearing-html;
-        animation-delay: 2.2s;
-    }
-}
-
-@keyframes appearing-js {
-    0% {
-        top: -1000px;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@keyframes appearing-ts {
-    0% {
-        top: -1000px;
-    } 
-    100% {
-        top: 10%;
-    }
-}
-
-@keyframes appearing-vite {
-    0% {
-        top: -1000px;
-    }  
-    100% {
-        top: 50%;
-    }
-}
-
-@keyframes appearing-gulp {
-    0% {
-        top: -1000px;
-    }  
-    100% {
-        top: 70%;
-    }
-}
-
-@keyframes appearing-webpack {
-    0% {
-        top: -1000px;
-    }  
-    100% {
-        top: 80%;
-    }
-}
-
-@keyframes appearing-sass {
-    0% {
-        top: -1000px;
-    }  
-    100% {
-        top: 70%;
-    }
-}
-
-@keyframes appearing-css {
-    0% {
-        top: -1000px;
-    }  
-    100% {
-        top: 50%;
-    }
-}
-
-@keyframes appearing-html {
-    0% {
-        top: -1000px;
-    }  
-    100% {
-        top: 10%;
-    }
+    justify-content: space-between;
+    gap: 30px;
 }
