@@ -1,0 +1,26 @@
+.icon {
+    width: 55px;
+    height: 55px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #F0DB4F;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.icon.icon--animated{
+    animation-name: coloring-js;
+    animation-delay: 3s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-js {
+    0% {
+        color: #ffffff;
+    }
+    100% {
+        color: #F0DB4F;
+    }
+}

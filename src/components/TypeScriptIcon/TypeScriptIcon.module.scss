@@ -1,0 +1,26 @@
+.icon {
+    width: 55px;
+    height: 55px;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #007ACC;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.icon.icon--animated{
+    animation-name: coloring-ts;
+    animation-delay: 3.2s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-ts {
+    0% {
+        color: #000000;
+    }
+    100% {
+        color: #007ACC;
+    }
+}

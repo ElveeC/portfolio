@@ -1,0 +1,26 @@
+.icon {
+    width: 55px;
+    height: 55px;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #CD6799;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.icon.icon--animated{
+    animation-name: coloring-sass;
+    animation-delay: 4s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-sass {
+    0% {
+        color: #000000;
+    }
+    100% {
+        color: #CD6799;
+    }
+}

@@ -1,0 +1,119 @@
+.icon {
+    width: 55px;
+    height: 55px;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon__color {
+    transition: all 0.3s ease-in-out;
+
+    &--1 {
+        color: #7c7b7b;
+    }
+    &--4 {
+        color: #424141;
+    }
+    &--5 {
+        color: #7c7b7b;
+    }
+}
+
+.icon:hover .icon__color {
+    transition: all 0.3s ease-in-out;
+}
+
+.icon:hover .icon__color--1 {
+    color: #41D1FF;
+}
+
+.icon:hover .icon__color--2 {
+    color: #BD34FE;
+}
+
+.icon:hover .icon__color--3 {
+    color: #FFEA83;
+}
+
+.icon:hover .icon__color--4 {
+    color: #FFDD35;
+}
+
+.icon:hover .icon__color--5 {
+    color: #FFA800;
+}
+
+.icon--animated .icon__color--1 {
+    animation-name: coloring-1;
+    animation-delay: 3.4s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-1 {
+    0% {
+        color: #7c7b7b;
+    }
+    100% {
+        color: #41D1FF;
+    }
+}
+
+.icon--animated .icon__color--2 {
+    animation-name: coloring-2;
+    animation-delay: 3.4s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-2 {
+    0% {
+        color: #000000;
+    }
+    100% {
+        color: #BD34FE;
+    }
+}
+
+.icon--animated .icon__color--3 {
+    animation-name: coloring-3;
+    animation-delay: 3.4s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-3 {
+    0% {
+        color: #000000;
+    }
+    100% {
+        color: #FFEA83;
+    }
+}
+
+.icon--animated .icon__color--4 {
+    animation-name: coloring-4;
+    animation-delay: 3.4s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-4 {
+    0% {
+        color: #424141;
+    }
+    100% {
+        color: #FFDD35;
+    }
+}
+
+.icon--animated .icon__color--5 {
+    animation-name: coloring-5;
+    animation-delay: 3.4s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-5 {
+    0% {
+        color: #7c7b7b;
+    }
+    100% {
+        color: #FFA800;;
+    }
+}

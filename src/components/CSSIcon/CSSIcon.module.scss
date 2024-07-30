@@ -1,0 +1,50 @@
+.icon {
+    width: 55px;
+    height: 55px;
+    color: #EBEBEB;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #0277BD;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.icon__path {
+    color: #000000;
+}
+
+.icon:hover .icon__path {
+    color: #EBEBEB;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon.icon--animated {
+    animation-name: coloring-css;
+    animation-delay: 4.2s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-css {
+    0% {
+        color: #EBEBEB;
+    }
+    100% {
+        color: #0277BD;
+    }
+}
+
+.icon--animated .icon__path {
+    animation-name: coloring-css-path;
+    animation-delay: 4.2s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-css-path {
+    0% {
+        color: #000000;
+    }
+    100% {
+        color: #EBEBEB;
+    }
+}

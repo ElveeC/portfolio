@@ -1,0 +1,47 @@
+.icon {
+    width: 55px;
+    height: 55px;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon:hover .icon__path1 {
+    color: #8ED6FB;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.icon:hover .icon__path2 {
+    color: #1C78C0;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon--animated .icon__path1 {
+    animation-name: coloring-path1;
+    animation-delay: 3.8s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-path1 {
+    0% {
+        color: #000000;
+    }
+    100% {
+        color: #8ED6FB;
+    }
+}
+
+.icon--animated .icon__path2 {
+    animation-name: coloring-path2;
+    animation-delay: 3.8s;
+    animation-duration: 2s;
+}
+
+@keyframes coloring-path2 {
+    0% {
+        color: #000000;
+    }
+    100% {
+        color: #1C78C0;
+    }
+}

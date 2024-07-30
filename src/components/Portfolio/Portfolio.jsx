@@ -15,14 +15,14 @@ const Portfolio = () => {
     {
       title: "Give5",
       description:
-        "Educational website with ccounts for teachers and students, games, theory, excercises. Still in production",
+        "Educational website with accounts for teachers and students, games, theory, excercises. Still in production",
       technologies: "React, Redux, HTML, SASS, Vite",
       link: "#",
     },
     {
       title: "Camera shop",
       description: "Online shop",
-      technologies: "React, Redux, Vite",
+      technologies: "TS, React, Redux, Vite",
       link: "#",
     },
   ];
