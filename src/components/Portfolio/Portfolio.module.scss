@@ -12,6 +12,7 @@
     flex-direction: column;
     margin: 0;
     padding: 50px 0;
+    gap: 20px;
     color: inherit;
     list-style-type: none;
 }
@@ -19,7 +20,7 @@
 .portfolio__title {
     display: inline-block;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     font-size: 90px;	
     color: #fff;
     background: -webkit-linear-gradient(45deg, #9f007f, #01cb7a 90%);

@@ -1,44 +1,100 @@
-.porfolio__item {
-    padding: 10px 10px 10px 50%;
-
-    &:nth-child(even) {
-        padding-right: 50%;
-        padding-left: 10px;
-    }
+.porfolio-item {
+    position: relative;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.portfolio__item-title {
-    opacity: 0;
-    transform: translate(0, -120%);
-    transition: all 0.3s ease-in-out;
+.portfolio-item__title {
+    margin: 0;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 500;
     overflow: hidden;
 
     &--animated {
-        opacity: 1;
-        transform: translate(0, 0%);
+        animation-name: title-from-left;
+        animation-duration: 0.8s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+    }
+
+    &:hover {
+        color: #cb3bbd;
         transition: all 0.3s ease-in-out;
+    } 
+}
+
+@keyframes title-from-left {
+    from {
+        transform: translate(-120%, 0);
+    }
+    to {
+        transform: translate(0, 0);
     }
 }
 
-.porfolio__item-inner {
+.porfolio-item__link {
+    position: relative;
+ 
+    &::after {
+        position: absolute;
+        content: '';
+        background: -webkit-linear-gradient(45deg, #9f007f, #01cb7a 90%);
+        left: 0;
+        bottom: -15px;
+        width: 0;
+        height: 3px;
+        animation-name: line-appearing;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        z-index: 5;
+    }
+}
+
+@keyframes line-appearing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+
+.porfolio-item__inner {
     padding: 50px;
     color: rgb(255, 255, 255);
     background-color: #7d2b6d;
-    border-radius: 30px;
-}
-
-.porfolio__item:nth-child(even) .porfolio__item-inner {
-        
-    background: linear-gradient(90deg, #2dbf82, #963583 70%);
-    transition: all 0.8s ease-in;
+    border-radius: 30px 0 0 30px;
+    transition: all 0.6s ease-in-out;
 
     &:hover {
-        background:  #963583;
-        transition: all 0.8s ease-in;
+        transition: all 0.6s ease-in-out;
+        box-shadow: 0 0 30px inset #2dbf82;
     }
 }
 
-.porfolio__link {
+.porfolio-item:nth-child(even) .porfolio-item__inner {
+        
+    background: linear-gradient(90deg, #2dbf82, #963583 70%);
+    border-radius: 0 30px 30px 0;
+   
+    &:hover {
+        background: linear-gradient(90deg, #963583, #2dbf82 98%);
+        color: rgb(255, 255, 255);
+        transition: all 0.6s ease-in-out;
+        
+    }
+}
+
+.porfolio-item__link {
     color: inherit;
     text-decoration: none;
+}
+
+.porfolio-item__description {
+    margin: 0;
 }

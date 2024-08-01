@@ -6,23 +6,29 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       title: "Acrylica",
+      name: "acrilica",
       description:
         "Website for a stone kitchen and bathroom furniture manufacturing company",
       technologies: "JS, HTML, SASS, Gulp",
       link: "#",
+      github: "#",
     },
     {
-      title: "Give5",
-      description:
-        "Educational website with accounts for teachers and students, games, theory, excercises. Still in production",
+      title: "Give5!",
+      name: "give5",
+      slogan: "Play the games, take the selfcheck tests, develop your with the educational web platform Give5!",
+      description: "Website with accounts for teachers and students, games, theory, excercises. Still in production",
       technologies: "React, Redux, HTML, SASS, Vite",
       link: "#",
+      github: "#",
     },
     {
       title: "Camera shop",
+      name: "camera",
       description: "Online shop",
       technologies: "TS, React, Redux, Vite",
       link: "#",
+      github: "#",
     },
   ];
 
