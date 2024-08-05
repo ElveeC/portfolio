@@ -4,61 +4,35 @@
     left: 5%;
     width: 50px;
     height: 50px;
-    transform: rotate(-15deg) /*translate(-120%, 0)*/;
-    animation-name: shake, moving;
-    animation-iteration-count: infinite, 1;
-    animation-duration: 8s, 0.5s;
+    transform: rotate(-15deg);
+    animation-name: bath-rotating;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
     animation-fill-mode: forwards;
-    //animation-delay: 0.5s;
-    //opacity: 0;
     transition: all 0.3s ease-in-out;
 
-    /*&--moving {
-        transform: translate(-120%, 0);
-        animation-name: moving;
-        animation-iteration-count: 1;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }*/
     &:hover {
-        color: red;
+        color: #cb3bbd;
         transition: all 0.3s ease-in-out;
     }
 }
 
-@keyframes shake {
+
+@keyframes bath-rotating {
     0% {
-        //bottom: 30%;
-        //left: 5%;
-        transform: rotate(-15deg) scale(0.5);
+        transform: rotate(-25deg);
     }
-    /*25% {
-    
-        //bottom: 30.01%;
-        //left: 5.1%;
-        //transform: rotate(-14deg);
-    }*/
+    25% {
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
 
     50% {
-        //bottom: 30.02%;
-        //left: 5.2%;
-        transform: rotate(-15deg) scale(1);
+        transform: rotate-(0deg);
     }
     100% {
-        //bottom: 30,01%;
-        //left: 5,1%;
-        transform: rotate(-15deg) scale(0.5);
+        transform: rotate(-25deg);
     }
 }
-
-/*@keyframes moving {
-    0% {
-        opacity: 0;
-        transform: translate(-120%, 0) rotate(-15deg);;
-    }
-   
-    100% {
-        transform: translate(0, 0) rotate(-15deg);
-        opacity: 1;
-    }
-}*/

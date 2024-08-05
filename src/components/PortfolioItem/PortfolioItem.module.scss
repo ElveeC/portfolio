@@ -1,4 +1,4 @@
-.porfolio-item {
+.portfolio-item {
     position: relative;
     padding: 10px;
     display: grid;
@@ -34,22 +34,23 @@
     }
 }
 
-.porfolio-item__link {
+.portfolio-item__link {
     position: relative;
- 
-    &::after {
-        position: absolute;
-        content: '';
-        background: -webkit-linear-gradient(45deg, #9f007f, #01cb7a 90%);
-        left: 0;
-        bottom: -15px;
-        width: 0;
-        height: 3px;
-        animation-name: line-appearing;
-        animation-duration: 1s;
-        animation-delay: 2s;
-        animation-fill-mode: forwards;
-        z-index: 5;
+
+    &--animated {
+        &::after {
+            position: absolute;
+            content: '';
+            background: -webkit-linear-gradient(45deg, #9f007f, #01cb7a 90%);
+            left: 0;
+            bottom: -15px;
+            width: 0;
+            height: 3px;
+            animation-name: line-appearing;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
     }
 }
 
@@ -63,21 +64,40 @@
     }
 }
 
-
-.porfolio-item__inner {
+.portfolio-item__inner {
     padding: 50px;
     color: rgb(255, 255, 255);
     background-color: #7d2b6d;
     border-radius: 30px 0 0 30px;
     transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    opacity: 0;
 
     &:hover {
         transition: all 0.6s ease-in-out;
         box-shadow: 0 0 30px inset #2dbf82;
     }
+
+    &--animated {
+        animation: inner-from-bottom;
+        animation-duration: 1.5s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+    }
 }
 
-.porfolio-item:nth-child(even) .porfolio-item__inner {
+@keyframes inner-from-bottom {
+    from {
+        opacity: 0;
+        transform: translate(0, 120%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.portfolio-item:nth-child(even) .portfolio-item__inner {
         
     background: linear-gradient(90deg, #2dbf82, #963583 70%);
     border-radius: 0 30px 30px 0;
@@ -86,15 +106,14 @@
         background: linear-gradient(90deg, #963583, #2dbf82 98%);
         color: rgb(255, 255, 255);
         transition: all 0.6s ease-in-out;
-        
     }
 }
 
-.porfolio-item__link {
+.portfolio-item__link {
     color: inherit;
     text-decoration: none;
 }
 
-.porfolio-item__description {
+.portfolio-item__description {
     margin: 0;
 }

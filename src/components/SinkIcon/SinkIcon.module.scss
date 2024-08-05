@@ -1,0 +1,36 @@
+.icon {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 45px;
+    height: 45px;
+    transform: rotate(15deg) /*translate(-120%, 0)*/;
+    animation-name: sink-rotating;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #cb3bbd;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@keyframes sink-rotating {
+    0% {
+        transform: rotate(15deg);
+    }
+    
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate-(-5deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}

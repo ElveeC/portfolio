@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 
 import BathIcon from "../BathIcon/BathIcon";
+import SinkIcon from "../SinkIcon/SinkIcon";
 import styles from "./PortfolioItem.module.scss";
 import cn from "classnames";
 
@@ -17,10 +18,13 @@ const PortfolioItem = ({ item }) => {
   };
 
   return (
-    <li ref={ref} className={styles["porfolio-item"]}>
-      <div className={styles["porfolio-item__link-wrapper"]}>
+    <li ref={ref} className={styles["portfolio-item"]}>
+      <div className={styles["portfolio-item__link-wrapper"]}>
         {item.name === ItemType.ACRILICA && <BathIcon inView={inView} />}
-        <a className={styles["porfolio-item__link"]} href={item.link}>
+        {item.name === ItemType.ACRILICA && <SinkIcon inView={inView} />}
+        <a className={cn(styles["portfolio-item__link"], {
+                [styles["portfolio-item__link--animated"]]: inView,
+              })} href={item.link}>
           <h3
             className={cn(styles["portfolio-item__title"], {
               [styles["portfolio-item__title--animated"]]: inView,
@@ -37,8 +41,10 @@ const PortfolioItem = ({ item }) => {
         </a>
       </div>
 
-      <div className={styles["porfolio-item__inner"]}>
-        <p className={styles["porfolio-item__description"]}>
+      <div className={cn(styles["portfolio-item__inner"], {
+                [styles["portfolio-item__inner--animated"]]: inView,
+              })}>
+        <p className={styles["portfolio-item__description"]}>
           {item.description}
         </p>
         <p>{item.technologies}</p>
