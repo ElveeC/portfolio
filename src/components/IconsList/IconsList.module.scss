@@ -1,7 +1,7 @@
 .icons {
-    padding-top: 60px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .icons__list {
@@ -15,7 +15,7 @@
 
 .icons__item {
     position: absolute;
-    top: -1000px;
+    top: -1200%;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 

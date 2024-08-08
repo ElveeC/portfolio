@@ -21,9 +21,9 @@ const Technologies = () => {
           <div className={styles["technologies__list-wrapper"]}>
             <TechnologiesNameList />
             <TechNewList />
+            <IconsList inView={inView} />
           </div>
         </div>
-        <IconsList inView={inView} />
       </div>
     </section>
   );
