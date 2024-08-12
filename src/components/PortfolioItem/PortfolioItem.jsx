@@ -10,6 +10,11 @@ import CameraIcon2 from "../CameraIcon2/CameraIcon2";
 import CameraIcon3 from "../CameraIcon3/CameraIcon3";
 import PhotoCameraIcon from "../PhotoCameraIcon/PhotoCameraIcon";
 import PhotoCameraIcon2 from "../PhotoCameraIcon2/PhotoCameraIcon2";
+import StudentIcon from "../StudentIcon/StudentIcon";
+import BookIcon from "../BookIcon/BookIcon";
+import WorkshopIcon from "../WorkshopIcon/WorkshopIcon";
+import BooksIcon from "../BooksIcon/BooksIcon";
+import SearchIcon from "../SearchIcon/SearchIcon";
 import styles from "./PortfolioItem.module.scss";
 import cn from "classnames";
 
@@ -39,6 +44,11 @@ const PortfolioItem = ({ item }) => {
         )}
          {item.name === ItemType.GIVE5 && (
           <>
+            <BookIcon inView={inView} />
+            <StudentIcon inView={inView} />
+            <WorkshopIcon inView={inView} />
+            <BooksIcon inView={inView} />
+            <SearchIcon inView={inView} />
           </>
         )}
         {item.name === ItemType.CAMERA_SHOP && (

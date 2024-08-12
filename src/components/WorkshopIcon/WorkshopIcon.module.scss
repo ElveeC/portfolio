@@ -1,0 +1,54 @@
+.icon {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    width: 35px;
+    height: 35px;
+    transform: rotate(10deg);
+    opacity: 0;
+
+    &:hover {
+        color: #cb3bbd;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &--moving {
+        animation-name: rotating, moving-from-bottom;
+        animation-iteration-count: infinite, 1;
+        animation-duration: 8s, 1s;
+        animation-fill-mode: forwards;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@keyframes moving-from-bottom {
+    from {
+        opacity: 0;
+        margin-bottom: -1000%;
+    }
+
+    to {
+        opacity: 1;
+        margin-bottom: 0;
+    }
+}
+
+
+@keyframes rotating {
+    0% {
+        transform: rotate(25deg);
+    }
+    25% {
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate-(-15deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
