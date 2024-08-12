@@ -1,9 +1,9 @@
 .icon {
     position: absolute;
     bottom: 10%;
-    left: 40%;
-    width: 40px;
-    height: 40px;
+    left: 0%;
+    width: 35px;
+    height: 35px;
     transform: rotate(15deg);
     opacity: 0;
 
@@ -13,7 +13,7 @@
     }
 
     &--moving {
-        animation-name: sink-rotating, moving-from-bottom;
+        animation-name: rotating, moving-from-bottom;
         animation-iteration-count: infinite, 1;
         animation-duration: 8s, 1s;
         animation-fill-mode: forwards;
@@ -34,7 +34,7 @@
     }
 }
 
-@keyframes sink-rotating {
+@keyframes rotating {
     0% {
         transform: rotate(15deg);
     }

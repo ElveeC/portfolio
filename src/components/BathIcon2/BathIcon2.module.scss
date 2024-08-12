@@ -1,10 +1,10 @@
 .icon {
     position: absolute;
     bottom: 10%;
-    left: 40%;
+    left: 80%;
     width: 40px;
     height: 40px;
-    transform: rotate(15deg);
+    transform: rotate(-15deg);
     opacity: 0;
 
     &:hover {
@@ -13,11 +13,11 @@
     }
 
     &--moving {
-        animation-name: sink-rotating, moving-from-bottom;
+        animation-name: bath-rotating, moving-from-bottom;
         animation-iteration-count: infinite, 1;
         animation-duration: 8s, 1s;
         animation-fill-mode: forwards;
-        animation-delay: 0.3s;
+        animation-delay: 0.2s;
         transition: all 0.3s ease-in-out;
     }
 }
@@ -34,19 +34,21 @@
     }
 }
 
-@keyframes sink-rotating {
+@keyframes bath-rotating {
     0% {
-        transform: rotate(15deg);
+        transform: rotate(-25deg);
     }
-    
+    25% {
+    }
+
     40% {
-        transform: rotate(-10deg);
+        transform: rotate(5deg);
     }
 
     50% {
-        transform: rotate-(-5deg);
+        transform: rotate-(0deg);
     }
     100% {
-        transform: rotate(15deg);
+        transform: rotate(-25deg);
     }
 }

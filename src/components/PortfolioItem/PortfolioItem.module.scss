@@ -5,6 +5,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.portfolio-item__link-wrapper {
+    position: relative;
+}
+
 .portfolio-item__title {
     margin: 0;
     display: inline-block;
