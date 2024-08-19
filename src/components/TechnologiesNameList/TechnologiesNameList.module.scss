@@ -1,11 +1,25 @@
+@import "../../variables.scss";
+
 .tech-in-use {
+
+    @media screen and (max-width: $vp-1024) {
+        max-width: 170px;
+    }
+
+    @media screen and (max-width: $vp-768) {
+        max-width: max-content;
+    }
     
     &__title {
         position: relative;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 45px;
         font-size: 28px;
         font-weight: 500;
+
+        @media screen and (max-width: $vp-1024) {
+            font-size: 24px;
+        }
     }
 
     &__list {
@@ -15,6 +29,10 @@
         flex-direction: column;
         gap: 10px;
         list-style-type: none;
+
+        @media screen and (max-width: $vp-1024) {
+            font-size: 18px;
+        }
     }
 }
 

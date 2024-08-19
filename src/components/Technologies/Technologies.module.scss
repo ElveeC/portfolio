@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .technologies {
     margin-bottom: 50px;
     padding: 0 30px;
@@ -20,10 +22,29 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-reflect: below -10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+
+    @media screen and (max-width: $vp-1024) {
+        margin-bottom: 130px;
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: $vp-768) {
+        margin-bottom: 100px;
+        font-size: 40px;
+    }
 }
 
 .technologies__list-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+
+    @media screen and (max-width: $vp-768) {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    @media screen and (max-width: $vp-375) {
+        gap: 50px;
+    }
 }

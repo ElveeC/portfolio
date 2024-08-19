@@ -5,11 +5,11 @@ import Hero from "../../components/Hero/Hero";
 
 const MainPage = () => {
   return (
-   <Layout>
-     <Hero />
-     <Technologies />
-     <Portfolio />
-   </Layout>
+    <Layout>
+      <Hero />
+      <Technologies />
+      <Portfolio />
+    </Layout>
   );
 };
 

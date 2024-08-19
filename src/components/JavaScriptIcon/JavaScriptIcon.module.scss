@@ -1,8 +1,15 @@
+@import "../../variables.scss";
+
 .icon {
     width: 55px;
     height: 55px;
     color: #ffffff;
     transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: $vp-1024) {
+        width: 45px;
+        height: 45px;
+    }
 
     &:hover {
         color: #F0DB4F;
