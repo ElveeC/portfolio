@@ -10,7 +10,7 @@ const TechnologiesNameList = () => {
   });
 
   const Title = {
-    EN: "Magic potion ingredients",
+    EN: "Secret ingredients",
     RU: "Ингредиенты для зелья",
   };
 

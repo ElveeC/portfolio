@@ -11,7 +11,7 @@ const TechNewList = () => {
       });
 
   const Title = {
-    EN: "Trying to master",
+    EN: "New ingredients",
     RU: "Познаю тайны",
   };
 

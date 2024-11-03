@@ -5,7 +5,7 @@ import PortfolioItem from "../PortfolioItem/PortfolioItem";
 const Portfolio = () => {
   const portfolioItems = [
     {
-      title: "Acrylica",
+      title: "Manufacturing company",
       name: "acrilica",
       description:
         "Website for a stone kitchen and bathroom furniture manufacturing company",
@@ -14,7 +14,7 @@ const Portfolio = () => {
       github: "#",
     },
     {
-      title: "Give5!",
+      title: "Educational platform",
       name: "give5",
       slogan: "Play the games, take the selfcheck tests, develop your with the educational web platform Give5!",
       description: "Website with accounts for teachers and students, games, theory, excercises. Still in production",
@@ -23,7 +23,7 @@ const Portfolio = () => {
       github: "#",
     },
     {
-      title: "Camera shop",
+      title: "Online shop",
       name: "camera",
       description: "Online shop",
       technologies: "TS, React, Redux, Vite",
@@ -35,7 +35,11 @@ const Portfolio = () => {
   return (
     <section className={styles.portfolio} id="portfolio">
       <div className={styles.portfolio__inner}>
-        <h2 className={styles["portfolio__title"]}>Portfolio</h2>
+        <h2 className={styles["portfolio__title"]}>Magic potions</h2>
+        <p>Unfortunately I can&apos;t provide you with full information about projects I took part in.</p>
+        <p>This is strictly prohibited by the most powerful spell called NDA</p>
+        <p>Here you find some code fragments.</p>
+        <p>The original pictures and texts were replaced. The animation was slightly changed - all due to the three magic letters - NDA</p>
         <ul className={styles["porfolio__list"]}>
           {portfolioItems.map((item) => (
             <PortfolioItem item={item} key={item.title} />
